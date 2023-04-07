@@ -16,3 +16,17 @@ First, you will need to get the global environment running. This is the [POC Mir
 You may get an error in Mirador saying `TypeError: Failed to fetch`. This is because the environment is currently set to open a specific manifest on open which doesn't exist whern you clone the repo. To fix this, in the poc-mirador directory open the `src/index.js` file and comment out the `{ manifestId: 'https://iiif.tetras-libre.fr/data/coeso-deliverable/Manual_Network_Configuration.json' }` object in the `windows` and `catalog` fields of the `config` variable.
 
 You should now have our version of Mirador running on your machine. You can add manifests and media content to the _www_ folder which will be available at the address `http://localhost:9000/data`.
+
+## Mirador Fork
+
+Next, if you wish to make modifications to our fork of Mirador, you will need to clone the [mirador-video-annotation](https://gitlab.tetras-libre.fr/iiif/mirador-video-annotation) repo. 
+
+Go to this directory and `npm install` it's dependencies, and run `npm start` to run the devleopment browser. This will run at [http://localhost:4444/](http://localhost:4444/). We recommend actively developing on this server before pushing changes.
+
+To bring these changes into the POC-mirador repo, you will need to make a new branch in the mirador-video-annotation, and reference this branch. To do this, go to the `package.json` file in poc-mirador, find the `"mirador"` `dependency`, and chnage the branche reference at the end of the url from `annotation-on-video` to your branch name.
+
+Now if you restart the server, the changes you commited on your development branch should apprear.
+
+## Annotation plugin
+
+The final part of the ecosystem is our fork of the annotations plugin which is found in the [mirodor-annotations](https://gitlab.tetras-libre.fr/iiif/mirador-annotations) repo. Like the mirador fork, you will need to clone this repo and create your own branch. 
