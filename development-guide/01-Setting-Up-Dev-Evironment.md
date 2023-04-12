@@ -2,6 +2,9 @@
 
 There are a few moving parts to the whole MemoRekall-IIIF ecosystem that need to be configured together before you can start development.
 
+1. [POC Mirador](#poc-mirador)
+2. [Mirador Fork and Annotaiton plugin](#mirador-fork-and-annotaiton-plugin)
+
 ## POC Mirador
 
 First, you will need to get the global environment running. This is the [POC Mirador](https://gitlab.tetras-libre.fr/iiif/POC-mirador) repo. Clone the repo, then follow the instructions to get it running. This is a summary of the main steps:
@@ -21,7 +24,7 @@ You may get an error in Mirador saying `TypeError: Failed to fetch`. This is bec
 
 ## Mirador Fork and Annotaiton plugin
 
-Now that you have the global environment, you need to acces the repos that are our fork of Mirador and our annotation plugin. You will notice that _POC-Mirador_ has two _git submodules_ which refer to these repos: [mirador-video-annotation](https://gitlab.tetras-libre.fr/iiif/mirador-video-annotation) (our fork of Mirador) and [mirodor-annotations](https://gitlab.tetras-libre.fr/iiif/mirador-annotations) (the annotaiton plugin). You will need to clone these repos that make chan ges to them.
+Now that you have the global environment, you need to acces the repos that are our fork of Mirador and our annotation plugin. You will notice that _POC-Mirador_ has two _git submodules_ which refer to these repos: [mirador-video-annotation](https://gitlab.tetras-libre.fr/iiif/mirador-video-annotation) (our fork of Mirador) and [miroaor-annotations](https://gitlab.tetras-libre.fr/iiif/mirador-annotations) (the annotation plugin). You will need to clone these repos that make chan ges to them.
 
 ### Development
 
