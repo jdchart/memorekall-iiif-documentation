@@ -24,7 +24,7 @@ You may get an error in Mirador saying `TypeError: Failed to fetch`. This is bec
 
 ## Mirador Fork and Annotaiton plugin
 
-Now that you have the global environment, you need to acces the repos that are our fork of Mirador and our annotation plugin. You will notice that _POC-Mirador_ has two _git submodules_ which refer to these repos: [mirador-video-annotation](https://gitlab.tetras-libre.fr/iiif/mirador-video-annotation) (our fork of Mirador) and [miroaor-annotations](https://gitlab.tetras-libre.fr/iiif/mirador-annotations) (the annotation plugin). You will need to clone these repos that make chan ges to them.
+Now that you have the global environment, you need to acces the repos that are our fork of Mirador and our annotation plugin. You will notice that _POC-Mirador_ has two _git submodules_ which refer to these repos: [mirador-video-annotation](https://gitlab.tetras-libre.fr/iiif/mirador-video-annotation) (our fork of Mirador) and [mirador-annotations](https://gitlab.tetras-libre.fr/iiif/mirador-annotations) (the annotation plugin). You will need to clone these repos that make chan ges to them.
 
 ### Development
 
