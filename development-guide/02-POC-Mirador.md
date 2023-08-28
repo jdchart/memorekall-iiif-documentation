@@ -21,10 +21,11 @@ Let's have a look at the contents of the repo:
 ├── package.json
 ├── package-lock.json
 
-
 ├── annotations-plugin
 ├── mirador-video-annotation
 ├── .gitmodules
+
+├── www
 
 ├── annotot-db
 
@@ -35,7 +36,7 @@ Let's have a look at the contents of the repo:
 ├── public
 │   ├── index.html
 
-├── www
+
 
 ├── .dockerignore
 ├── .env
@@ -76,6 +77,10 @@ The `annotations-plugin` and `mirador-video-annotation` are [git submodules](htt
 These are the modules to modify if you wish to make changes to the interface and underlying systems. There are dedicated pages to each of these modules in this guide.
 
 The `.gitmodules` file is a file that tells git about these modules and where to find them. Like node packages, this system allows the repo to be lighterweight, and the submodules will be downloaded and installed on your local machine during setup of the package.
+
+### www
+
+This is an empty folder where you will be able to put content that will be available at the path `http://localhost:9000/data`. It is where you will store media and manifests for testing. You can create your own folder hierarchy within this folder. Note that you will also be able to refer to media and data stored elsewhere as long as you have permission.
 
 ### annotot-db
 
